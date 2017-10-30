@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Saludo</string>
+    <string name="label_calender">Select date</string>
+    <string name="label_contact">Select contact</string>
+    <string name="label_recording">Hold to record voice message</string>
+    <string name="label_save">Send Seludo</string>
+</resources>
