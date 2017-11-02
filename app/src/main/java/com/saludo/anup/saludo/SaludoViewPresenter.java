@@ -7,6 +7,10 @@ import android.content.Context;
  */
 
 public interface SaludoViewPresenter {
-
+    String todayDate = new String();
     void showTost(Context context, String message);
+    void validateFieds(String date, String contact, String voiceMsg);
+    void setDate(String date);
+    String getDate();
+
 }

@@ -5,4 +5,8 @@ package com.saludo.anup.saludo;
  */
 
 public class SaludoViewInteractorImpl implements SaludoViewInteractor {
+    @Override
+    public String pushSaludoToServer(String strDate, String contactNumber, String ContactName, String recordedVoiceMsg) {
+        return null;
+    }
 }

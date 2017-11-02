@@ -6,7 +6,11 @@ package com.saludo.anup.saludo;
 
 public interface SaludoView {
 
-    void showToastOnError();
+    //void showToastOnError();
+    void showProgress();
+    void hideProgress();
+
+    //presenter's call
     void pickDateFromCalender();
     void pickContactFromPhoneContact();
     void startVoiceMessageRecording();

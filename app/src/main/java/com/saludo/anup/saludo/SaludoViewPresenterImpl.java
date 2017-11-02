@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class SaludoViewPresenterImpl implements SaludoViewPresenter {
     SaludoView saludoView;
     SaludoViewInteractor saludoViewInteractor;
+    String todayDate = new String();
 
     public SaludoViewPresenterImpl(SaludoView saludoView) {
         this.saludoView = saludoView;
@@ -24,4 +25,21 @@ public class SaludoViewPresenterImpl implements SaludoViewPresenter {
         }
 
     }
+
+    @Override
+    public void validateFieds(String date, String contact, String voiceMsg) {
+
+    }
+
+    @Override
+    public void setDate(String date) {
+        this.todayDate = date;
+    }
+
+    @Override
+    public String getDate() {
+        return this.todayDate;
+    }
+
+
 }

@@ -11,7 +11,6 @@
         android:id="@+id/btn_calender"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/label_calender"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="@dimen/margin_16"
@@ -39,7 +38,8 @@
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginEnd="@dimen/margin_16"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="28dp" />
+        android:layout_marginBottom="26dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:id="@+id/btn_voice_recording"
@@ -52,7 +52,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_stopl_recording"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_stopl_recording"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        android:layout_marginRight="@dimen/margin_16"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/margin_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/btn_send"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_voice_recording"
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginEnd="@dimen/margin_16"
         tools:layout_constraintLeft_creator="1"
@@ -73,7 +91,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginEnd="@dimen/margin_16"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="121dp" />
+        android:layout_marginBottom="98dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
 
 

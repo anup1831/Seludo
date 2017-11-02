@@ -5,4 +5,12 @@ package com.saludo.anup.saludo;
  */
 
 public interface SaludoViewInteractor {
+
+    //create a listener interface where will have a methods for onSuccess(successfullyDataPushed message), onFaliure(Failure message)
+    interface OnSaludoPushListener{
+        void onPushSuccessful();
+        void onPushFailure();
+    }
+
+    public String pushSaludoToServer(String strDate, String contactNumber, String ContactName, String recordedVoiceMsg);
 }
